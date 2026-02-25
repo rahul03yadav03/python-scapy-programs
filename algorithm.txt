@@ -1,0 +1,49 @@
+START
+ ├── Network Testing (Simulation)
+ │    ├─ ARP Packet Simulation
+ │    │    → Create ARP reply packet
+ │    │    → Send to test host
+ │    │
+ │    ├─ TCP Connectivity Test (SYN Scan)
+ │    │    → Send SYN packet
+ │    │    → Check flags:
+ │    │         - SYN-ACK = Port Open
+ │    │         - RST-ACK = Port Closed
+ │    │         - No response = Filtered
+ │    │
+ │    └─ ICMP Ping Test
+ │         → Send ICMP Echo Request
+ │         → Verify network connectivity
+ │
+ ├── Security Monitoring (Detection)
+ │    ├─ ARP Anomaly Detection
+ │    │    → Capture ARP replies
+ │    │    → Compare IP–MAC mappings
+ │    │    → Generate alert on mismatch
+ │    │
+ │    └─ DNS Query Monitoring
+ │         → Capture UDP port 53 packets
+ │         → Log source IP and domain name
+ │
+ ├── Traffic Monitoring (Analysis)
+ │    ├─ HTTP Packet Monitor
+ │    │    → Capture TCP port 80 packets
+ │    │    → Display IPs and ports
+ │    │
+ │    ├─ Specific IP Monitor
+ │    │    → Capture packets for chosen IP
+ │    │    → Display TCP/IP details
+ │    │
+ │    └─ Source/Destination IP Logger
+ │         → Capture packets
+ │         → Display source and destination IPs
+ │
+ └── Network Discovery (Utility)
+      ├─ ARP Network Scanner
+      │    → Send ARP requests to subnet
+      │    → Collect IP and MAC addresses
+      │
+      └─ TCP Port Status Checker
+           → Send SYN packet
+           → Display port state
+END
